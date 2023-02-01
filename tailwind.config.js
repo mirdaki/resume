@@ -4,7 +4,7 @@ module.exports = {
 	theme: {
 		extend: {},
 		fontFamily: {
-			'sans': ['inter', 'Helvetica', ...defaultTheme.fontFamily.sans,],
+			'sans': ['inter', 'Helvetica'],
 		}
 	},
 	plugins: [],

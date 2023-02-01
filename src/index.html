@@ -6,59 +6,101 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/dist/output.css" rel="stylesheet">
 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+		integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+
 	<link rel="preconnect" href="https://rsms.me/">
 	<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 </head>
 
-<body class="font-sans">
+<body class="flex flex-col gap-4 bg-slate-50 font-sans text-black m-3">
 
-	<header class="flex flex-row justify-between">
-		<h1>Matthew Booe</h1>
-		<p>Byline</p>
+	<header class="flex flex-col gap-1 border-slate-400 border-b-2 pb-3">
+		<h1 class="flex flex-row gap-x-3 font-extrabold tracking-tight text-5xl">
+			<div>First</div>
+			<div>Last</div>
+		</h1>
+		<p class="font-semibold text-slate-900 text-2xl">Byline and some text
+		</p>
 		<nav>
-			<ul>
-				<li> <a href="https://codecaptured.com">codecaptured.com</a></li>
-				<li><a href="https://github.com/mirdaki">github.com/mirdaki</a></li>
-				<li> <a href="https://linkedin.com/in/matthew-booe">linkedin.com/in/matthew-booe</a></li>
+			<ul class="flex flex-row gap-x-5 mt-3">
+				<li>
+					<a class="flex flex-row" href="https://codecaptured.com">
+						<span class="rounded-full bg-black flex items-center justify-center"
+							style="height: 45px; width: 45px;"><i class="fa fa-globe text-white fa-2x"
+								aria-hidden="true"></i></span>
+						<p class="hidden">codecaptured.com</p>
+					</a>
+				</li>
+				<li>
+					<a class="flex flex-row" href="https://github.com/mirdaki">
+						<span class="rounded-full bg-black flex items-center justify-center"
+							style="height: 45px; width: 45px;"><i class="fa fa-github text-white fa-2x"
+								aria-hidden="true"></i></span>
+						<p class="hidden">github.com/mirdaki</p>
+					</a>
+				</li>
+				<li>
+					<a class="flex flex-row" href="https://linkedin.com/in/matthew-booe">
+						<span class="rounded-full bg-black flex items-center justify-center"
+							style="height: 45px; width: 45px;"><i class="fa fa-linkedin-square text-white fa-2x"
+								aria-hidden="true"></i></span>
+						<p class="hidden">linkedin.com/in/matthew-booe</p>
+					</a>
+				</li>
 			</ul>
 		</nav>
 	</header>
 
-	<div class="grid">
+	<div class="grid gap-8 text-slate-800">
 
 		<section>
-			<h2>About</h2>
+			<h2 class="section-title">About</h2>
 
-			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur mollitia at quae nostrum quas
+			<p class="leading-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur mollitia at quae
+				nostrum quas
 				ratione
 				nesciunt maxime? Quo autem corporis, fugiat dignissimos ex, voluptates placeat reprehenderit ab ratione,
 				molestias expedita!</p>
 		</section>
 
 		<section>
-			<h2>Education</h2>
+			<h2 class="section-title">Education</h2>
 
-			<p>University of Place</p>
-			<p>Main Degree</p>
-			<p>Bachelor's Degree</p>
-			<p>Other Minor</p>
-			<p>2014 - 2019</p>
+			<div class="subsection-title">
+				<p>University of Place</p>
+				<div>•</div>
+				<p>Main Degree</p>
+			</div>
+
+			<div class="subsection-subtitle">
+				<p>Bachelor's Degree</p>
+				<div>•</div>
+				<p>Other Minor</p>
+			</div>
+
+			<p class="font-light">2014 - 2019</p>
 		</section>
 
 		<section>
-			<h2>Work</h2>
-			<!-- <div class="grid grid-flow-col auto-rows-max"> -->
-			<div>
-				<article>
+			<h2 class="section-title">Work Experience</h2>
+			<div class="flex flex-col gap-3 divide-slate-300 divide-y-2">
+				<article class="flex flex-col gap-2">
 					<div>
-						<p>Workplace</p>
-						<p>Job Title</p>
-						<p>2021 - Present</p>
-						<p>Place, US</p>
+						<h3 class="subsection-title">
+							<p>Workplace</p>
+							<div>•</div>
+							<p>Job Title</p>
+						</h3>
+						<div class="subsection-subtitle">
+							<p>2021 - Present</p>
+							<div>•</div>
+							<p>Place, US</p>
+						</div>
 					</div>
 
 					<div>
-						<ul>
+						<ul class="list-inside list-disc leading-5">
 							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
 							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
 							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
@@ -67,16 +109,22 @@
 					</div>
 				</article>
 
-				<article>
+				<article class="flex flex-col gap-2 pt-3">
 					<div>
-						<p>Workplace</p>
-						<p>Job Title</p>
-						<p>2021 - Present</p>
-						<p>Place, US</p>
+						<h3 class="subsection-title">
+							<p>Workplace</p>
+							<div>•</div>
+							<p>Job Title</p>
+						</h3>
+						<div class="subsection-subtitle">
+							<p>2021 - Present</p>
+							<div>•</div>
+							<p>Place, US</p>
+						</div>
 					</div>
 
 					<div>
-						<ul>
+						<ul class="list-inside list-disc leading-5">
 							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
 							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
 							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
@@ -85,16 +133,22 @@
 					</div>
 				</article>
 
-				<article>
+				<article class="flex flex-col gap-2 pt-3">
 					<div>
-						<p>Workplace</p>
-						<p>Job Title</p>
-						<p>2021 - Present</p>
-						<p>Place, US</p>
+						<h3 class="subsection-title">
+							<p>Workplace</p>
+							<div>•</div>
+							<p>Job Title</p>
+						</h3>
+						<div class="subsection-subtitle">
+							<p>2021 - Present</p>
+							<div>•</div>
+							<p>Place, US</p>
+						</div>
 					</div>
 
 					<div>
-						<ul>
+						<ul class="list-inside list-disc leading-5">
 							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
 							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
 							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
@@ -106,56 +160,69 @@
 		</section>
 
 		<section>
-			<h2>Other Experience</h2>
-			<div>
-				<article>
+			<h2 class="section-title">Other Experience</h2>
+
+			<div class="flex flex-col gap-3 divide-slate-300 divide-y-2">
+				<article class="flex flex-col gap-2">
 					<div>
-						<p>Workplace</p>
-						<p>Job Title</p>
-						<p>2021 - Present</p>
-						<p>Place, US</p>
+						<h3 class="subsection-title">
+							<p>Workplace</p>
+							<div>•</div>
+							<p>Job Title</p>
+						</h3>
+						<div class="subsection-subtitle">
+							<p>2021 - Present</p>
+							<div>•</div>
+							<p>Place, US</p>
+						</div>
 					</div>
 
 					<div>
-						<ul>
-							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+						<ul class="list-inside list-disc leading-5">
 							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
 							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
 						</ul>
 					</div>
 				</article>
 
-				<article>
+				<article class="flex flex-col gap-2 pt-3">
 					<div>
-						<p>Workplace</p>
-						<p>Job Title</p>
-						<p>2021 - Present</p>
-						<p>Place, US</p>
+						<h3 class="subsection-title">
+							<p>Workplace</p>
+							<div>•</div>
+							<p>Job Title</p>
+						</h3>
+						<div class="subsection-subtitle">
+							<p>2021 - Present</p>
+							<div>•</div>
+							<p>Place, US</p>
+						</div>
 					</div>
 
 					<div>
-						<ul>
-							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+						<ul class="list-inside list-disc leading-5">
 							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
 							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
 						</ul>
 					</div>
 				</article>
 
-				<article>
+				<article class="flex flex-col gap-2 pt-3">
 					<div>
-						<p>Workplace</p>
-						<p>Job Title</p>
-						<p>2021 - Present</p>
-						<p>Place, US</p>
+						<h3 class="subsection-title">
+							<p>Workplace</p>
+							<div>•</div>
+							<p>Job Title</p>
+						</h3>
+						<div class="subsection-subtitle">
+							<p>2021 - Present</p>
+							<div>•</div>
+							<p>Place, US</p>
+						</div>
 					</div>
 
 					<div>
-						<ul>
-							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+						<ul class="list-inside list-disc leading-5">
 							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
 							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
 						</ul>
@@ -165,30 +232,34 @@
 		</section>
 
 		<section>
-			<h2>Side Projects</h2>
+			<h2 class="section-title">Side Projects</h2>
 
-			<article>
-				<h3>Project Name</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit • Technology used</p>
-			</article>
+			<div class="flex flex-col gap-3">
+				<article>
+					<h3 class="font-semibold">Project Name</h3>
+					<p class="leading-5">Lorem ipsum dolor sit amet consectetur adipisicing elit • Technology used</p>
+				</article>
 
-			<article>
-				<h3>Project Name</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit • Technology used</p>
-			</article>
+				<article>
+					<h3 class="font-semibold">Project Name</h3>
+					<p class="leading-5">Lorem ipsum dolor sit amet consectetur adipisicing elit • Technology used</p>
+				</article>
+			</div>
 		</section>
 
 		<section>
-			<h3>Skills</h3>
+			<h2 class="section-title">Skills</h2>
 
-			<p>Lorem ipsum • dolor sit amet • consectetur adipisicing • elit • quasi illum • reprehenderit • dignissimos
+			<p class="leading-5">Lorem ipsum • dolor sit amet • consectetur adipisicing • elit • quasi illum •
+				reprehenderit • dignissimos
 				sequi vel soluta • optio aliquam • impedit voluptatum</p>
 		</section>
 
 		<section>
-			<h3>Interests</h3>
+			<h2 class="section-title">Interests</h2>
 
-			<p>Lorem ipsum • dolor sit amet • consectetur adipisicing • elit • quasi illum • reprehenderit • dignissimos
+			<p class="leading-5">Lorem ipsum • dolor sit amet • consectetur adipisicing • elit • quasi illum •
+				reprehenderit • dignissimos
 				sequi vel soluta • optio aliquam • impedit voluptatum</p>
 		</section>
 

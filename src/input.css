@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+	.nav-icon-background {
+		@apply rounded-full bg-black flex items-center justify-center h-[45px] w-[45px] md:h-[30px] md:w-[30px];
+	}
 	.section-title {
 		@apply tracking-tighter text-slate-900 border-b-2 border-black text-4xl mb-2;
 	}

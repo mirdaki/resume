@@ -4,70 +4,83 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="/dist/output.css" rel="stylesheet">
-
+	
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
-		integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
-
+	integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+	
 	<link rel="preconnect" href="https://rsms.me/">
 	<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+	<link href="/dist/output.css" rel="stylesheet">
 </head>
 
-<body class="flex flex-col gap-4 bg-slate-50 font-sans text-black m-3">
+<body class="grid grid-cols-[1fr] gap-4 bg-slate-50 font-sans text-black m-3 md:grid-cols-[2fr_4fr_1fr] md:gap-8">
 
-	<header class="flex flex-col gap-1 border-slate-400 border-b-2 pb-3">
-		<h1 class="flex flex-row gap-x-3 font-extrabold tracking-tight text-5xl">
+	<header
+		class="grid grid-cols-1 gap-1 border-slate-400 border-b-2 pb-3 md:col-span-3 md:grid-cols-[subgrid] md:items-end md:justify-between md:gap-x-8">
+
+		<h1 class="flex flex-row gap-x-3 font-extrabold tracking-tight text-5xl md:flex-col md:text-6xl">
 			<div>First</div>
 			<div>Last</div>
 		</h1>
+
 		<p class="font-semibold text-slate-900 text-2xl">Byline and some text
 		</p>
+
 		<nav>
-			<ul class="flex flex-row gap-x-5 mt-3">
+			<ul class="flex flex-row gap-x-5 mt-3 md:flex-col md:gap-1">
+
 				<li>
-					<a class="flex flex-row" href="https://codecaptured.com">
-						<span class="rounded-full bg-black flex items-center justify-center"
-							style="height: 45px; width: 45px;"><i class="fa fa-globe text-white fa-2x"
-								aria-hidden="true"></i></span>
-						<p class="hidden">codecaptured.com</p>
+					<a class="flex flex-row items-center gap-2 w-max" href="https://codecaptured.com">
+						<span class="nav-icon-background">
+							<i class="fa text-white fa-2x fa-globe md:hidden" aria-hidden="true"></i>
+							<i class="fa text-white fa-lg fa-globe hidden md:inline" aria-hidden="true"></i>
+						</span>
+						<p class="hidden md:inline">codecaptured.com</p>
 					</a>
 				</li>
+
 				<li>
-					<a class="flex flex-row" href="https://github.com/mirdaki">
-						<span class="rounded-full bg-black flex items-center justify-center"
-							style="height: 45px; width: 45px;"><i class="fa fa-github text-white fa-2x"
-								aria-hidden="true"></i></span>
-						<p class="hidden">github.com/mirdaki</p>
+					<a class="flex flex-row items-center gap-2 w-max" href="https://github.com/mirdaki">
+						<span class="nav-icon-background">
+							<i class="fa text-white fa-2x fa-github md:hidden" aria-hidden="true"></i>
+							<i class="fa text-white fa-lg fa-github hidden md:inline" aria-hidden="true"></i>
+						</span>
+						<p class="hidden md:inline">github.com/mirdaki</p>
 					</a>
 				</li>
+
 				<li>
-					<a class="flex flex-row" href="https://linkedin.com/in/matthew-booe">
-						<span class="rounded-full bg-black flex items-center justify-center"
-							style="height: 45px; width: 45px;"><i class="fa fa-linkedin-square text-white fa-2x"
-								aria-hidden="true"></i></span>
-						<p class="hidden">linkedin.com/in/matthew-booe</p>
+					<a class="flex flex-row items-center gap-2 w-max" href="https://linkedin.com/in/matthew-booe">
+						<span class="nav-icon-background">
+							<i class="fa text-white fa-2x fa-linkedin-square md:hidden" aria-hidden="true"></i>
+							<i class="fa text-white fa-lg fa-linkedin-square hidden md:inline" aria-hidden="true"></i>
+						</span>
+						<p class="hidden md:inline">linkedin.com/in/matthew-booe</p>
 					</a>
 				</li>
+
 			</ul>
 		</nav>
+
 	</header>
 
-	<div class="grid gap-8 text-slate-800">
+	<main class="grid gap-8 text-slate-800 leading-5 md:col-span-3 md:grid-cols-[subgrid] md:grid-flow-dense">
 
-		<section>
+		<section class="md:col-start-1">
 			<h2 class="section-title">About</h2>
 
-			<p class="leading-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur mollitia at quae
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur mollitia at quae
 				nostrum quas
 				ratione
 				nesciunt maxime? Quo autem corporis, fugiat dignissimos ex, voluptates placeat reprehenderit ab ratione,
 				molestias expedita!</p>
 		</section>
 
-		<section>
+		<section class="md:col-start-1">
 			<h2 class="section-title">Education</h2>
 
-			<div class="subsection-title">
+			<div class="subsection-title w-max">
 				<p>University of Place</p>
 				<div>•</div>
 				<p>Main Degree</p>
@@ -82,29 +95,32 @@
 			<p class="font-light">2014 - 2019</p>
 		</section>
 
-		<section>
+		<section class="md:col-start-2 md:row-span-3 md:col-span-2 lg:col-span-1">
 			<h2 class="section-title">Work Experience</h2>
+
 			<div class="flex flex-col gap-3 divide-slate-300 divide-y-2">
-				<article class="flex flex-col gap-2">
+				<article class="flex flex-col gap-2 lg:flex-row lg:gap-3 lg:justify-between">
 					<div>
-						<h3 class="subsection-title">
+						<h3 class="subsection-title lg:flex lg:flex-col lg:leading-1">
 							<p>Workplace</p>
-							<div>•</div>
+							<div class="lg:hidden">•</div>
 							<p>Job Title</p>
 						</h3>
-						<div class="subsection-subtitle">
+						<div class="subsection-subtitle xl:flex xl:flex-col">
 							<p>2021 - Present</p>
-							<div>•</div>
+							<div class="xl:hidden">•</div>
 							<p>Place, US</p>
 						</div>
 					</div>
 
 					<div>
-						<ul class="list-inside list-disc leading-5">
-							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+						<ul class="list-inside list-disc">
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
+								consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
 						</ul>
 					</div>
 				</article>
@@ -124,11 +140,11 @@
 					</div>
 
 					<div>
-						<ul class="list-inside list-disc leading-5">
-							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+						<ul class="list-inside list-disc">
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
 						</ul>
 					</div>
 				</article>
@@ -148,18 +164,18 @@
 					</div>
 
 					<div>
-						<ul class="list-inside list-disc leading-5">
-							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+						<ul class="list-inside list-disc">
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
 						</ul>
 					</div>
 				</article>
 			</div>
 		</section>
 
-		<section>
+		<section class="md:col-start-2 md:row-span-2 md:col-span-2 lg:col-start-2 lg:col-span-1">
 			<h2 class="section-title">Other Experience</h2>
 
 			<div class="flex flex-col gap-3 divide-slate-300 divide-y-2">
@@ -178,9 +194,9 @@
 					</div>
 
 					<div>
-						<ul class="list-inside list-disc leading-5">
-							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+						<ul class="list-inside list-disc">
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
 						</ul>
 					</div>
 				</article>
@@ -200,9 +216,9 @@
 					</div>
 
 					<div>
-						<ul class="list-inside list-disc leading-5">
-							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+						<ul class="list-inside list-disc">
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
 						</ul>
 					</div>
 				</article>
@@ -222,48 +238,48 @@
 					</div>
 
 					<div>
-						<ul class="list-inside list-disc leading-5">
-							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+						<ul class="list-inside list-disc">
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
 						</ul>
 					</div>
 				</article>
 			</div>
 		</section>
 
-		<section>
+		<section class="md:col-start-1">
 			<h2 class="section-title">Side Projects</h2>
 
 			<div class="flex flex-col gap-3">
 				<article>
 					<h3 class="font-semibold">Project Name</h3>
-					<p class="leading-5">Lorem ipsum dolor sit amet consectetur adipisicing elit • Technology used</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit • Technology used</p>
 				</article>
 
 				<article>
 					<h3 class="font-semibold">Project Name</h3>
-					<p class="leading-5">Lorem ipsum dolor sit amet consectetur adipisicing elit • Technology used</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit • Technology used</p>
 				</article>
 			</div>
 		</section>
 
-		<section>
+		<section class="md:col-start-1">
 			<h2 class="section-title">Skills</h2>
 
-			<p class="leading-5">Lorem ipsum • dolor sit amet • consectetur adipisicing • elit • quasi illum •
+			<p>Lorem ipsum • dolor sit amet • consectetur adipisicing • elit • quasi illum •
 				reprehenderit • dignissimos
 				sequi vel soluta • optio aliquam • impedit voluptatum</p>
 		</section>
 
-		<section>
+		<section class="md:col-start-1">
 			<h2 class="section-title">Interests</h2>
 
-			<p class="leading-5">Lorem ipsum • dolor sit amet • consectetur adipisicing • elit • quasi illum •
+			<p>Lorem ipsum • dolor sit amet • consectetur adipisicing • elit • quasi illum •
 				reprehenderit • dignissimos
 				sequi vel soluta • optio aliquam • impedit voluptatum</p>
 		</section>
 
-	</div>
+	</main>
 
 </body>
 

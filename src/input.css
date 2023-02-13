@@ -8,14 +8,18 @@
 	}
 
 	.section-title {
-		@apply tracking-tighter text-slate-900 border-b-2 border-black text-4xl mb-2;
+		@apply mb-2 text-4xl tracking-tighter border-b-2 border-black text-slate-900;
 	}
 
 	.subsection-title {
-		@apply flex gap-1 font-semibold;
+		@apply flex gap-1 font-semibold xl:w-max;
 	}
 
 	.subsection-subtitle {
-		@apply flex gap-1 font-light;
+		@apply flex self-end font-light leading-5 gap-x-1 xl:flex xl:flex-col;
+	}
+
+	.experince-subsection {
+		@apply flex flex-col gap-2 md:col-span-2 xl:col-span-1 xl:flex-row xl:justify-between xl:gap-x-10;
 	}
 }

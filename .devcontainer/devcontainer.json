@@ -10,7 +10,8 @@
 			"extensions": [
 				"EditorConfig.EditorConfig",
 				"ban.spellright",
-				"bradlc.vscode-tailwindcss"
+				"bradlc.vscode-tailwindcss",
+				"heybourn.headwind"
 			]
 		}
 	}

@@ -8,18 +8,18 @@
 	}
 
 	.section-title {
-		@apply mb-2 text-4xl tracking-tighter border-b-2 border-black text-slate-900;
+		@apply mb-2 text-4xl font-bold tracking-tighter border-b-2 border-black text-slate-900;
 	}
 
 	.experince-subsection {
-		@apply flex flex-col gap-2 md:col-span-2 lg:col-span-2 lg:flex-row lg:gap-x-10 xl:col-span-1;
+		@apply flex flex-col gap-2 md:col-span-2 lg:col-span-2 lg:flex-row lg:gap-x-6 xl:col-span-1 2xl:gap-x-10;
 	}
 
 	.subsection-title {
-		@apply flex gap-1 font-semibold lg:w-max;
+		@apply flex gap-1 font-bold lg:w-max;
 	}
 
 	.subsection-subtitle {
-		@apply flex font-light leading-5 gap-x-1 lg:flex lg:flex-col;
+		@apply flex font-normal leading-5 gap-x-1 lg:flex lg:flex-col;
 	}
 }

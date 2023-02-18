@@ -4,11 +4,11 @@
 
 @layer components {
 	.nav-icon-background {
-		@apply rounded-full bg-black flex items-center justify-center h-[45px] w-[45px] md:h-[30px] md:w-[30px];
+		@apply rounded-full bg-slate-900 flex items-center justify-center h-[45px] w-[45px] md:h-[30px] md:w-[30px] dark:bg-zinc-50;
 	}
 
 	.section-title {
-		@apply mb-2 text-4xl font-bold tracking-tighter border-b-2 border-black text-slate-900;
+		@apply mb-2 text-4xl font-bold tracking-tighter border-b-2 border-slate-900 text-slate-900 dark:text-zinc-100 dark:border-orange-600;
 	}
 
 	.experince-subsection {

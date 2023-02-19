@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: 'Inter';
+	src: url("/assets/Inter-3.19/Inter Variable/Inter.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: 'Aurebesh Pro Font';
+	src: url("/assets/GSAurebeshPro/GSAurebeshPro-VariableVF.ttf") format("truetype");
+	unicode-range: U+00-FF;
+}
+
 @layer components {
 	.nav-icon-background {
 		@apply rounded-full bg-slate-900 flex items-center justify-center h-[45px] w-[45px] md:h-[30px] md:w-[30px] dark:bg-zinc-50;

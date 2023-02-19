@@ -10,6 +10,11 @@ Pull in dependencies:
 npm install
 ```
 
+Download fonts (not included in source) and unzip in assets:
+- [Inter](https://rsms.me/inter/)
+- [Fork Awesome](https://forkaweso.me)
+- [Aurebesh Pro Font](https://galacticsurplus.co/products/aurebesh-pro-font)
+
 Start tailwind CLI to generate CSS and web server to see updates:
 
 ```bash

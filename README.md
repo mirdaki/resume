@@ -23,6 +23,14 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 npx serve
 ```
 
+### Updating PDF
+
+The CSS print options does not enforce consistent printing in browsers. Instead, we'll provide a nicely formatted PDF for easy download. These settings may change, but what I've found useful (using the Firefox print options):
+- Paper size: A4
+- Scale: 90
+- Margin: 0 .13 0 .13
+- Print backgrounds: True
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE file](LICENSE) for details.

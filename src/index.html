@@ -15,18 +15,19 @@
 <body
 	class="grid grid-cols-[1fr] gap-4 bg-slate-50 font-sans text-slate-900 m-3 md:grid-cols-[2fr_4fr_1fr] md:gap-8 xl:grid-cols-[1fr_1fr_1fr] font-medium xl:m-10 2xl:mx-24 dark:bg-zinc-900 dark:text-zinc-100">
 
+	<!-- Doing both md:grid-cols-3 and md:grid-cols-[subgrid] enables support for browses without subgrid -->
 	<header
-		class="grid grid-cols-1 gap-1 border-slate-400 border-b-2 pb-3 md:col-span-3 md:grid-cols-[subgrid] md:items-end md:justify-between md:gap-x-8 dark:border-zinc-400">
+		class="grid grid-cols-1 gap-1 border-slate-400 border-b-2 pb-3 md:col-span-3 md:grid-cols-3 md:grid-cols-[subgrid] md:items-end md:justify-between md:gap-x-8 dark:border-zinc-400">
 
-		<h1 class="flex flex-row text-5xl font-black tracking-tight gap-x-3 md:flex-col md:text-6xl xl:text-7xl">
+		<h1 class="flex flex-row text-5xl font-black tracking-tight gap-x-3 md:col-start-1 md:flex-col md:text-6xl xl:text-7xl">
 			<div>First</div>
 			<div>Last</div>
 		</h1>
 
-		<p class="text-2xl font-semibold text-slate-900 dark:text-orange-600">Byline and some text
+		<p class="text-2xl font-semibold text-slate-900 md:col-start-2 dark:text-orange-600">Byline and some text
 		</p>
 
-		<nav>
+		<nav class="md:col-start-3">
 			<ul class="flex flex-row mt-3 gap-x-5 md:flex-col md:gap-1">
 
 				<li>
@@ -312,9 +313,9 @@
 	</main>
 
 	<footer
-		class="grid grid-cols-1 gap-1 border-slate-400 border-t-2 md:col-span-3 md:grid-cols-[subgrid] md:items-end md:justify-between md:gap-x-8 dark:border-zinc-400 print:hidden">
+		class="grid grid-cols-1 gap-1 border-slate-400 border-t-2 md:col-span-3 md:grid-cols-3 md:grid-cols-[subgrid] md:items-end md:justify-between md:gap-x-8 dark:border-zinc-400 print:hidden">
 
-		<ul class="flex flex-row mt-3 gap-x-5 md:grid md:grid-cols-[subgrid] md:col-span-3">
+		<ul class="flex flex-row mt-3 gap-x-8 md:grid md:grid-cols-3 md:grid-cols-[subgrid] md:col-span-3">
 
 			<li class="md:col-start-1">
 				<a class="flex flex-row items-center gap-2 w-max" href="https://codecaptured.com" download>

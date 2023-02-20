@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Svg Vector Icons : http://www.onlinewebfonts.com/icon -->
+
+<svg
+   version="1.1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 256 256"
+   enable-background="new 0 0 1000 1000"
+   xml:space="preserve"
+   id="svg366"
+   sodipodi:docname="6fb41e43049e3ad48b854f3cf9a514f4.svg"
+   width="256"
+   height="256"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs370" /><sodipodi:namedview
+   id="namedview368"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   showgrid="false"
+   inkscape:zoom="1.027"
+   inkscape:cx="-38.461538"
+   inkscape:cy="166.50438"
+   inkscape:window-width="2560"
+   inkscape:window-height="1371"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="g364" />
+<metadata
+   id="metadata360"> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+<style>
+	g { fill: #000000; }
+	@media (prefers-color-scheme: dark) {
+		g { fill: #ffffff; }
+	}
+</style>
+<g
+   id="g364"
+   transform="translate(-355.9635,-333.10828)"><path
+     d="m 611.9635,581.11389 c -8.93388,-46.45461 -43.23266,-84.01802 -88.42449,-98.1107 25.05143,-13.63147 42.0049,-39.84386 42.0049,-69.95096 0,-44.14853 -36.49307,-79.94395 -81.50205,-79.94395 -45.00899,0 -81.50205,35.79542 -81.50205,79.94395 0,30.08147 16.95347,56.29387 42.0049,69.95096 -44.38204,13.83645 -78.44572,50.27244 -88.13715,95.52276 -0.2351,0.64058 -0.36572,1.33241 -0.41796,2.04985 -0.0261,0.17936 0.0261,0.35872 -0.0261,0.53809 v 0 c 0,4.40716 3.65714,7.99439 8.1502,7.99439 4.49307,0 8.15021,-3.58723 8.15021,-7.99439 v 0 c 11.12814,-50.37494 57.07753,-88.09208 111.75183,-88.09208 54.67429,0 100.49307,37.71714 111.64735,88.09208 v 0 c 0.0784,4.35592 3.68327,7.84065 8.15021,7.84065 4.46694,0 8.07183,-3.48473 8.1502,-7.84065 z M 418.81409,413.07785 c 0,-35.3342 29.20491,-63.95515 65.20165,-63.95515 36.02285,0 65.20163,28.64658 65.20163,63.95515 0,35.3342 -29.2049,63.95517 -65.20163,63.95517 -35.99674,0 -65.20165,-28.62097 -65.20165,-63.95517 z"
+     id="path362"
+     style="stroke-width:0.258715;image-rendering:auto" /></g>
+</svg>

@@ -6,9 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-	
+
 	<link rel="stylesheet" href="/assets/Fork-Awesome-1.2.0/css/fork-awesome.min.css">
-	
+
 	<link href="/dist/output.css" rel="stylesheet">
 </head>
 
@@ -18,7 +18,7 @@
 	<header
 		class="grid grid-cols-1 gap-1 border-slate-400 border-b-2 pb-3 md:col-span-3 md:grid-cols-[subgrid] md:items-end md:justify-between md:gap-x-8 dark:border-zinc-400">
 
-		<h1 class="flex flex-row text-5xl font-black tracking-tight gap-x-3 md:flex-col md:text-6xl xl:text-7xl" id="name">
+		<h1 class="flex flex-row text-5xl font-black tracking-tight gap-x-3 md:flex-col md:text-6xl xl:text-7xl">
 			<div>First</div>
 			<div>Last</div>
 		</h1>
@@ -319,8 +319,7 @@
 			<li class="md:col-start-1">
 				<a class="flex flex-row items-center gap-2 w-max" href="https://codecaptured.com" download>
 					<span class="nav-icon-background">
-						<i class="text-white fa fa-2x fa-download md:hidden dark:text-zinc-900"
-							aria-hidden="true"></i>
+						<i class="text-white fa fa-2x fa-download md:hidden dark:text-zinc-900" aria-hidden="true"></i>
 						<i class="hidden text-white fa fa-lg fa-download md:inline dark:text-zinc-900"
 							aria-hidden="true"></i>
 					</span>
@@ -331,8 +330,7 @@
 			<li class="md:col-start-2">
 				<a class="flex flex-row items-center gap-2 w-max" href="https://github.com/mirdaki/resume">
 					<span class="nav-icon-background">
-						<i class="text-white fa fa-2x fa-code-fork md:hidden dark:text-zinc-900"
-							aria-hidden="true"></i>
+						<i class="text-white fa fa-2x fa-code-fork md:hidden dark:text-zinc-900" aria-hidden="true"></i>
 						<i class="hidden text-white fa fa-lg fa-code-fork md:inline dark:text-zinc-900"
 							aria-hidden="true"></i>
 					</span>
@@ -343,17 +341,16 @@
 			<li class="md:col-start-3">
 				<button class="flex flex-row items-center gap-2 w-max" onclick="toggleStarWars()">
 					<span class="nav-icon-background">
-						<i class="text-white fa fa-2x fa-rebel md:hidden dark:text-zinc-900"
-							aria-hidden="true"></i>
+						<i class="text-white fa fa-2x fa-rebel md:hidden dark:text-zinc-900" aria-hidden="true"></i>
 						<i class="hidden text-white fa fa-lg fa-rebel md:inline dark:text-zinc-900"
 							aria-hidden="true"></i>
 					</span>
-					<p class="hidden md:inline">Star Wars Mode</p>
+					<p class="hidden md:inline" id="starWarsText">Star Wars Mode</p>
 				</button>
 			</li>
 
 		</ul>
-		
+
 	</footer>
 
 </body>
@@ -361,22 +358,21 @@
 </html>
 
 <script>
-	const nameElement = document.getElementById("name");
+	const starWarsElement = document.getElementById("starWarsText");
 	const sectionTitleElement = document.getElementsByTagName("h2");
-
-	var isStarWars = false;
 
 	function toggleStarWars() {
 		document.body.classList.toggle("text-sm");
 		document.body.classList.toggle("font-['Aurebesh_Pro_Font']");
 		document.body.classList.toggle("lowercase");
+		document.body.classList.toggle("tracking-wide");
 
-		nameElement.classList.toggle("text-4xl");
-		nameElement.classList.toggle("md:text-5xl");
-		nameElement.classList.toggle("xl:text-6xl");
+		// Have to do this, because the button overrides the body style
+		starWarsElement.classList.toggle("lowercase");
 
 		for (const element of sectionTitleElement) {
 			element.classList.toggle("text-3xl");
+			element.classList.toggle("tracking-normal");
 		}
 	}
 </script>

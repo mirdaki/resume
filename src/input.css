@@ -23,7 +23,7 @@
 	}
 
 	.experince-subsection {
-		@apply flex flex-col gap-2 md:col-span-2 lg:col-span-2 lg:flex-row lg:gap-x-6 xl:col-span-1 2xl:gap-x-10;
+		@apply flex flex-col gap-2 md:col-span-2 lg:col-span-2 lg:flex-row lg:gap-x-6 2xl:col-span-1 2xl:gap-x-10;
 	}
 
 	.subsection-title {

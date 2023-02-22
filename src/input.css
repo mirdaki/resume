@@ -31,6 +31,6 @@
 	}
 
 	.subsection-subtitle {
-		@apply flex font-normal leading-5 gap-x-1 lg:flex lg:flex-col;
+		@apply flex leading-5 font-extralight gap-x-1 lg:flex lg:flex-col;
 	}
 }

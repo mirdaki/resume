@@ -39,9 +39,9 @@
 <metadata
    id="metadata360"> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
 <style>
-	g { fill: #000000; }
+	g { fill: #9a3412; }
 	@media (prefers-color-scheme: dark) {
-		g { fill: #ffffff; }
+		g { fill: #ea580c; }
 	}
 </style>
 <g

@@ -37,22 +37,23 @@
 </head>
 
 <body
-	class="grid grid-cols-[1fr] gap-4 bg-slate-50 font-sans text-slate-900 m-3 md:grid-cols-[2fr_4fr_1fr] md:gap-8 2xl:grid-cols-[1fr_1fr_1fr] font-medium 2xl:m-10 2xl:mx-24 dark:bg-zinc-900 dark:text-zinc-100">
+	class="grid grid-cols-[1fr] gap-4 bg-slate-50 font-sans text-slate-900 m-3 md:grid-cols-[2fr_4fr_1fr] md:gap-8 lg:grid-cols-[2fr_1fr_3fr_1fr] 2xl:grid-cols-[1fr_2fr_1fr_2fr_1fr_2fr] font-medium 2xl:m-10 2xl:mx-24 dark:bg-zinc-900 dark:text-zinc-100">
 
 	<!-- Doing both md:grid-cols-3 and md:grid-cols-[subgrid] enables support for browses without subgrid -->
 	<header
-		class="grid grid-cols-1 gap-1 border-slate-400 border-b-2 pb-3 md:col-span-3 md:grid-cols-3 md:grid-cols-[subgrid] md:items-end md:justify-between md:gap-x-8 dark:border-zinc-400">
+		class="grid grid-cols-1 gap-1 border-slate-400 border-b-2 pb-3 md:col-span-3 md:grid-cols-3 md:grid-cols-[subgrid] md:items-end md:justify-between md:gap-x-8 lg:col-span-4 2xl:col-span-6 dark:border-zinc-400">
 
 		<h1
-			class="flex flex-row text-5xl font-black tracking-tight gap-x-3 md:col-start-1 md:flex-col md:text-6xl 2xl:text-7xl">
+			class="flex flex-row text-5xl font-black tracking-tight gap-x-3 md:col-start-1 md:flex-col md:text-6xl 2xl:col-span-2 2xl:text-7xl">
 			<div>Matthew</div>
 			<div>Booe</div>
 		</h1>
 
-		<p class="text-2xl font-semibold text-slate-900 md:col-start-2 dark:text-orange-600">Software Engineer
+		<p class="text-2xl font-semibold text-slate-900 md:col-start-2 lg:col-span-2 dark:text-orange-600">Software
+			Engineer
 		</p>
 
-		<nav class="md:col-start-3">
+		<nav class="md:col-start-4 2xl:col-start-5 2xl:col-span-2">
 			<ul class="flex flex-row mt-3 gap-x-5 md:flex-col md:gap-1">
 
 				<li>
@@ -109,9 +110,9 @@
 	</header>
 
 	<main
-		class="grid gap-8 text-slate-800 leading-5 md:col-span-3 md:grid-cols-[subgrid] md:grid-flow-dense dark:text-zinc-200">
+		class="grid gap-8 text-slate-800 leading-5 md:col-span-3 md:grid-cols-[subgrid] md:grid-flow-dense lg:col-span-4 2xl:col-span-6 dark:text-zinc-200">
 
-		<section class="md:col-start-1">
+		<section class="md:col-start-1 2xl:col-span-2">
 			<h2 class="section-title">About</h2>
 
 			<p>Software Engineer with 3 years of experience building enterprise scalable developer services for machine
@@ -119,7 +120,7 @@
 				source projects. A to explore and leverage technologies to make genuine impact on people's lives.</p>
 		</section>
 
-		<section class="md:col-start-1 2xl:col-start-2">
+		<section class="md:col-start-1 2xl:col-start-3 2xl:col-span-2">
 			<h2 class="section-title">Education</h2>
 
 			<div class="subsection-title w-max">
@@ -138,14 +139,14 @@
 		</section>
 
 		<section
-			class="grid grid-cols-[subgrid] md:col-start-2 md:col-span-2 md:row-span-3 md:content-start x 2xl:col-start-1 2xl:row-start-2 2xl:col-span-3 2xl:row-span-1">
+			class="grid grid-cols-[subgrid] md:col-start-2 md:col-span-2 md:row-span-3 md:content-start lg:col-span-3 2xl:col-start-1 2xl:row-start-2 2xl:col-span-6 2xl:row-span-1">
 
-			<h2 class="section-title md:col-span-2 2xl:col-span-3">Work Experience</h2>
+			<h2 class="section-title md:col-span-2 lg:col-span-3 2xl:col-span-6">Work Experience</h2>
 
 			<div
-				class="grid grid-cols-[subgrid] gap-3 divide-slate-300 divide-y-2 md:col-start-1 md:col-span-2 2xl:col-span-3 2xl:divide-y-0 2xl:gap-x-8 2xl:gap-y-0 dark:divide-zinc-600">
+				class="grid grid-cols-[subgrid] gap-3 divide-slate-300 divide-y-2 md:col-start-1 md:col-span-2 lg:col-span-3 2xl:col-span-6 2xl:divide-y-0 2xl:gap-x-8 2xl:gap-y-0 dark:divide-zinc-600">
 
-				<article class="experince-subsection md:row-start-1 2xl:col-start-1 2xl:row-start-2 2xl:col-span-1">
+				<article class="experince-subsection md:row-start-1 2xl:col-start-1 2xl:row-start-2">
 					<div>
 						<h3 class="subsection-title">
 							<p>Microsoft</p>
@@ -159,7 +160,7 @@
 						</div>
 					</div>
 
-					<div>
+					<div class="lg:col-span-2 2xl:col-start-2">
 						<ul class="list-disc list-inside ">
 							<li>Collaborated with data scientist to build machine learning powered Azure services with
 								developer tool integrations serving millions of requests daily within a hundred
@@ -177,12 +178,12 @@
 					</div>
 				</article>
 
-				<article class="pt-3 experince-subsection md:row-start-2 2xl:col-start-2 2xl:row-start-2 2xl:pt-0">
+				<article class="pt-3 experince-subsection md:row-start-2 2xl:col-start-3 2xl:row-start-2 2xl:pt-0">
 					<div>
 						<h3 class="subsection-title">
 							<p>Microsoft</p>
 							<div>•</div>
-							<p>Software Engineer I&nbsp;</p>
+							<p>Software Engineer I</p>
 						</h3>
 						<div class="subsection-subtitle">
 							<p>2019 - 2021</p>
@@ -191,7 +192,7 @@
 						</div>
 					</div>
 
-					<div>
+					<div class="lg:col-span-2 2xl:col-start-2">
 						<ul class="list-disc list-inside">
 							<li>Upgraded and scaled an inference service and Azure CLI integration from dozens of daily
 								requests to hundreds of thousands</li>
@@ -203,12 +204,12 @@
 					</div>
 				</article>
 
-				<article class="pt-3 experince-subsection md:row-start-3 2xl:col-start-3 2xl:row-start-2 2xl:pt-0">
+				<article class="pt-3 experince-subsection md:row-start-3 2xl:col-start-5 2xl:row-start-2 2xl:pt-0">
 					<div>
 						<h3 class="subsection-title">
 							<p>Microsoft</p>
 							<div>•</div>
-							<p>Software Intern&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+							<p>Software Intern</p>
 						</h3>
 						<div class="subsection-subtitle">
 							<p>2018</p>
@@ -217,7 +218,7 @@
 						</div>
 					</div>
 
-					<div>
+					<div class="lg:col-span-2 2xl:col-start-2">
 						<ul class="list-disc list-inside">
 							<li>Created a machine learning training pipeline to analyze Visual Studio telemetry to
 								recommend Azure services and tutorials</li>
@@ -231,20 +232,19 @@
 		</section>
 
 		<section
-			class="grid grid-cols-[subgrid] md:col-start-2 md:row-span-2 md:col-span-2 md:content-start lg:col-start-2 2xl:col-start-1 2xl:row-start-3 2xl:col-span-3 2xl:row-span-1">
+			class="grid grid-cols-[subgrid] md:col-start-2 md:row-span-2 md:col-span-2 md:content-start lg:col-span-3 lg:col-start-2 2xl:col-start-1 2xl:row-start-3 2xl:col-span-6 2xl:row-span-1">
 
-			<h2 class="section-title md:col-span-2 2xl:col-span-3">Other Experience</h2>
+			<h2 class="section-title md:col-span-2 lg:col-span-3 2xl:col-span-6">Other Experience</h2>
 
 			<div
-				class="grid grid-cols-[subgrid] gap-3 divide-slate-300 divide-y-2 md:col-start-1 md:col-span-2 2xl:col-span-3 2xl:divide-y-0 2xl:gap-x-8 2xl:gap-y-0 dark:divide-zinc-600">
+				class="grid grid-cols-[subgrid] gap-3 divide-slate-300 divide-y-2 md:col-start-1 md:col-span-2 lg:col-span-3 2xl:col-span-6 2xl:divide-y-0 2xl:gap-x-8 2xl:gap-y-0 dark:divide-zinc-600">
 
 				<article class="experince-subsection md:row-start-1 2xl:col-start-1 2xl:row-start-3">
 					<div>
 						<h3 class="subsection-title">
 							<p>Saber Guild</p>
 							<div>•</div>
-							<p>Performer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							</p>
+							<p>Performer</p>
 						</h3>
 						<div class="subsection-subtitle">
 							<p>2021 - Present</p>
@@ -253,7 +253,7 @@
 						</div>
 					</div>
 
-					<div>
+					<div class="lg:col-span-2 2xl:col-start-2">
 						<ul class="list-disc list-inside">
 							<li>Joined not-for-profit, Lucasfilm-recognized Star Wars costuming group that specializes
 								in choreographed lightsaber shows to raise funds for charity</li>
@@ -263,12 +263,12 @@
 					</div>
 				</article>
 
-				<article class="pt-3 experince-subsection md:row-start-2 2xl:col-start-2 2xl:row-start-3 2xl:pt-0">
+				<article class="pt-3 experince-subsection md:row-start-2 2xl:col-start-3 2xl:row-start-3 2xl:pt-0">
 					<div>
 						<h3 class="subsection-title">
 							<p>Open Source Club</p>
 							<div>•</div>
-							<p>Founder&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+							<p>Founder</p>
 						</h3>
 						<div class="subsection-subtitle">
 							<p>2016 - 2019</p>
@@ -277,7 +277,7 @@
 						</div>
 					</div>
 
-					<div>
+					<div class="lg:col-span-2 2xl:col-start-2">
 						<ul class="list-disc list-inside">
 							<li>Created club to promote, support, and create open source software among college students
 							</li>
@@ -287,12 +287,12 @@
 					</div>
 				</article>
 
-				<article class="pt-3 experince-subsection md:row-start-3 2xl:col-start-3 2xl:row-start-3 2xl:pt-0">
+				<article class="pt-3 experince-subsection md:row-start-3 2xl:col-start-5 2xl:row-start-3 2xl:pt-0">
 					<div>
 						<h3 class="subsection-title">
 							<p>Eagle Scout Project</p>
 							<div>•</div>
-							<p>Scout&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+							<p>Scout</p>
 						</h3>
 						<div class="subsection-subtitle">
 							<p>2011 - 2012</p>
@@ -301,7 +301,7 @@
 						</div>
 					</div>
 
-					<div>
+					<div class="lg:col-span-2 2xl:col-start-2">
 						<ul class="list-disc list-inside">
 							<li>Planned, organized, and installed a drip irrigation system for the Lockmar Community
 								Garden, enabling residents to have more precise control of gardens and lowered
@@ -315,7 +315,7 @@
 
 		</section>
 
-		<section class="md:col-start-1 2xl:col-start-1 2xl:row-start-4">
+		<section class="md:col-start-1 2xl:col-start-1 2xl:row-start-4 2xl:col-span-2">
 			<h2 class="section-title">Side Projects</h2>
 
 			<div class="flex flex-col gap-3">
@@ -336,7 +336,7 @@
 			</div>
 		</section>
 
-		<section class="md:col-start-1 2xl:col-start-2 2xl:row-start-4">
+		<section class="md:col-start-1 2xl:col-start-3 2xl:row-start-4 2xl:col-span-2">
 			<h2 class="section-title">Skills</h2>
 
 			<p>C# • ASP.NET • Rust • Python • Linux • Docker • Visual Studio • Visual Studio Code • Azure • App Services
@@ -344,7 +344,7 @@
 				Project management • Leadership</p>
 		</section>
 
-		<section class="md:col-start-1 2xl:col-start-3 2xl:row-start-4">
+		<section class="md:col-start-1 2xl:col-start-5 2xl:row-start-4 2xl:col-span-2">
 			<h2 class="section-title">Interests</h2>
 
 			<p>Open source software • Self hosting • Community building • Customer feedback • Mentoring • Process
@@ -354,9 +354,10 @@
 	</main>
 
 	<footer
-		class="grid grid-cols-1 gap-1 border-slate-400 border-t-2 md:col-span-3 md:grid-cols-3 md:grid-cols-[subgrid] md:items-end md:justify-between md:gap-x-8 dark:border-zinc-400 print:hidden">
+		class="grid grid-cols-1 gap-1 border-slate-400 border-t-2 md:col-span-3 lg:col-span-4 md:grid-cols-3 md:grid-cols-[subgrid] md:items-end md:justify-between md:gap-x-8 2xl:col-span-6 dark:border-zinc-400 print:hidden">
 
-		<ul class="flex flex-row mt-3 gap-x-8 md:grid md:grid-cols-3 md:grid-cols-[subgrid] md:col-span-3">
+		<ul
+			class="flex flex-row mt-3 gap-x-8 md:grid md:grid-cols-3 md:grid-cols-[subgrid] md:col-span-3 lg:col-span-4 2xl:col-span-6">
 
 			<li class="md:col-start-1">
 				<a class="flex flex-row items-center gap-2 w-max" href="/assets/MatthewBooeResume.pdf" download>
@@ -369,7 +370,7 @@
 				</a>
 			</li>
 
-			<li class="md:col-start-2">
+			<li class="md:col-start-2 2xl:col-start-3">
 				<a class="flex flex-row items-center gap-2 w-max" href="https://github.com/mirdaki/resume">
 					<span class="nav-icon-background">
 						<i class="text-white fa fa-2x fa-code-fork md:hidden dark:text-zinc-900" aria-hidden="true"></i>
@@ -380,7 +381,7 @@
 				</a>
 			</li>
 
-			<li class="md:col-start-3">
+			<li class="md:col-start-3 lg:col-start-4 2xl:col-start-5">
 				<button class="flex flex-row items-center gap-2 w-max" onclick="toggleStarWars()">
 					<span class="nav-icon-background">
 						<i class="text-white fa fa-2x fa-rebel md:hidden dark:text-zinc-900" aria-hidden="true"></i>
